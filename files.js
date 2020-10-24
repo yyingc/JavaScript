@@ -218,7 +218,7 @@
 								return a = !1, i
 							}
 						}() : i;
-					if (a && n.error && "login" === n.error) return confirm(G("You have been logged out.")), void location.reload();
+					if (a && n.error && "login" === n.error) return confirm(G("您已注销。")), void location.reload();
 					e.complete && e.complete(n, i, a);
 					var o = !e.url && t.getResponseHeader("files-msg");
 					o && j("XHR: files-msg: " + o)
@@ -294,7 +294,7 @@
 				a = window;
 			e.explorer = /MSIE /.test(i.userAgent) || /Trident\//.test(i.userAgent);
 			var n = !!(a.CSS && a.CSS.supports || a.supportsCSS);
-			!e.explorer && n && CSS.supports("color", "var(--fake-var)") || (document.body.innerHTML = '<div class="alert alert-danger" role="alert"><h4 class="alert-heading">' + (e.explorer ? "Internet Explorer" : "This browser is") + ' not supported.</h4>Please use a modern browser like <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" class="alert-link">Edge</a>, <a href="https://www.google.com/chrome/" class="alert-link">Chrome</a>, <a href="https://www.mozilla.org/firefox/" class="alert-link">Firefox</a>, <a href="https://www.opera.com/" class="alert-link">Opera</a> or <a href="https://www.apple.com/safari/" class="alert-link">Safari</a>.</div>', document.body.classList.remove("body-loading"), fail), e.local_storage = !!a.localStorage && function() {
+			!e.explorer && n && CSS.supports("color", "var(--fake-var)") || (document.body.innerHTML = '<div class="alert alert-danger" role="alert"><h4 class="alert-heading">' + (e.explorer ? "Internet Explorer" : "你的浏览器") + ' 不支持。</h4>请使用现代浏览器 <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" class="alert-link">Edge</a>, <a href="https://www.google.com/chrome/" class="alert-link">Chrome</a>, <a href="https://www.mozilla.org/firefox/" class="alert-link">Firefox</a>, <a href="https://www.opera.com/" class="alert-link">Opera</a> or <a href="https://www.apple.com/safari/" class="alert-link">Safari</a>.</div>', document.body.classList.remove("body-loading"), fail), e.local_storage = !!a.localStorage && function() {
 				try {
 					var e = "_t";
 					return a.localStorage.setItem(e, e), a.localStorage.removeItem(e), !0
