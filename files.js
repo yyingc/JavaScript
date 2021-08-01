@@ -2711,7 +2711,7 @@
 					for (var e = g.length, t = 0; t < e; t++)
 						if (g[t].path.includes("/")) return !1;
 					return !0
-				}()) ? T(g, "menu from localstorage [" + (_c.menu_cache_validate ? "shallow menu" : "menu cache validation disabled") + "]"): (R.sidebar_menu.classList.add("sidebar-spinner"), R.sidebar_menu.dataset.title = G("loading") + " …", q({
+				}()) ? T(g, "menu from localstorage [" + (_c.menu_cache_validate ? "shallow menu" : "menu cache validation disabled") + "]"): (R.sidebar_menu.classList.add("sidebar-spinner"), R.sidebar_menu.dataset.title = G("加载中") + " …", q({
 					params: !_c.menu_cache_file && "action=dirs" + (_c.cache ? "&menu_cache_hash=" + _c.menu_cache_hash : "") + (f ? "&localstorage=1" : ""),
 					url: _c.menu_cache_file,
 					json_response: !0,
@@ -2878,7 +2878,7 @@
 					},
 					kind: {
 						prop: "ext",
-						lang: G("种类"),
+						lang: G("类别"),
 						order: "asc"
 					},
 					filesize: {
@@ -2953,7 +2953,7 @@
 			}, R.filter.placeholder = G("搜索"), R.filter.title = (e = "F", G("搜索") + " [" + (W.is_mac ? "⌘" : "ctrl-") + e + "]"), _c.has_login) {
 				var t = _id("logout");
 				t.innerHTML = E.get_svg("logout"), t.dataset.tooltip = G("logout"), t.classList.add("tooltip-left", "tooltip-bottom"), b(t, (function(e) {
-					confirm("are you sure you want to log out?") || e.preventDefault()
+					confirm("您确定要退出吗?") || e.preventDefault()
 				}))
 			}
 			var i = _id("topbar-fullscreen");
