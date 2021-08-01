@@ -600,7 +600,7 @@
 				R.breadcrumbs.dataset.info = e, R.breadcrumbs.classList.toggle("breadcrumbs-info", !!e)
 			}
 			if (E.breadcrumbs_info = function() {
-				e(_c.files_count + " " + (_c.current_dir.images_count === _c.files_count ? G("images", "image", _c.files_count) : _c.current_dir.files_count === _c.files_count ? G("文件", "文件", _c.files_count) : !_c.current_dir.files_count && _c.files_count ? G("文件夹", "文件夹", _c.files_count) : G("项目", "项目", _c.files_count)) + (_c.current_dir.dirsize ? "  " + filesize(_c.current_dir.dirsize) : ""))
+				e(_c.files_count + " " + (_c.current_dir.images_count === _c.files_count ? G("图片", "图片", _c.files_count) : _c.current_dir.files_count === _c.files_count ? G("文件", "文件", _c.files_count) : !_c.current_dir.files_count && _c.files_count ? G("文件夹", "文件夹", _c.files_count) : G("项目", "项目", _c.files_count)) + (_c.current_dir.dirsize ? "  " + filesize(_c.current_dir.dirsize) : ""))
 			}, _c.breadcrumbs) {
 				E.async_breadcrumb_links = function() {
 					V(_querya('.crumb-link[href="#"]', R.breadcrumbs), (function(e, t) {
